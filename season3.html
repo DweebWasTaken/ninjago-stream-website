@@ -32,8 +32,8 @@
                         <a href="index.html" class="list-group-item border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="bi bi-bootstrap"></i> <span>Home</span> </a>
                         <a href="season1.html" class="list-group-item border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="bi bi-film"></i> <span>Season 1</span></a>
                         <a href="season2.html" class="list-group-item border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="bi bi-heart"></i> <span>Season 2</span></a>
-                        <a href="#" class="list-group-item border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="bi bi-bricks"></i> <span>Season 3</span></a>
-                        <a href="#" class="list-group-item border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="bi bi-clock"></i> <span>Season 4</span></a>
+                        <a href="season3.html" class="list-group-item border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="bi bi-bricks"></i> <span>Season 3</span></a>
+                        <a href="season4.html" class="list-group-item border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="bi bi-clock"></i> <span>Season 4</span></a>
                         <a href="#" class="list-group-item border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="bi bi-archive"></i> <span>Season 5</span></a>
                         <a href="#" class="list-group-item border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="bi bi-gear"></i> <span>Season 6</span></a>
                         <a href="#" class="list-group-item border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="bi bi-calendar"></i> <span>Season 7</span></a>
@@ -91,8 +91,11 @@
         </div>
     </div>
     <script>
-        jQuery("iframe").each(function() {
-            jQuery(this)[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')
+        var iframe = document.getElementsByTagName('iframe')[0];
+        var player = $f(iframe);
+
+        player.addEvent('ready', function() {
+            player.api('setVolume', 0);
         });
         $(document).ready(function() {
             $("#btn1").click(function() {
