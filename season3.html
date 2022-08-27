@@ -61,21 +61,22 @@
                 <div class="row">
                     <div class="col-12">
 
-                        <iframe id="vid1" width="560" height="315" src="https://www.bilibili.tv/en/video/2005321785" title="YouTube video player" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe id="vid1" class="hv2 hv3 hv4 hv5 hv6 hv7 hv8" width="560" height="315" src="https://www.bilibili.tv/en/video/2005321785" title="YouTube video player" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
 
-                        <iframe id="vid2" class="hiddenvid" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe id="vid2" class="hiddenvid hv1 hv3 hv4 hv5 hv6 hv7 hv8" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-                        <iframe id="vid3" class="hiddenvid" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe id="vid3" class="hiddenvid hv1 hv2 hv4 hv5 hv6 hv7 hv8" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-                        <iframe id="vid4" class="hiddenvid" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe id="vid4" class="hiddenvid hv1 hv2 hv3 hv5 hv6 hv7 hv8" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-                        <iframe id="vid5" class="hiddenvid" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe id="vid5" class="hiddenvid hv1 hv2 hv3 hv4 hv6 hv7 hv8" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-                        <iframe id="vid6" class="hiddenvid" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe id="vid6" class="hiddenvid hv1 hv2 hv3 hv4 hv5 hv7 hv8" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-                        <iframe id="vid7" class="hiddenvid" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe id="vid7" class="hiddenvid hv1 hv2 hv3 hv4 hv5 hv6 hv8" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-                        <iframe id="vid8" class="hiddenvid" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe id="vid8" class="hiddenvid hv1 hv2 hv3 hv4 hv5 hv6 hv7" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
                 <button id="btn1">Episode 1</button>
@@ -99,9 +100,14 @@
                 $("#vid1").show();
             });
             //change attribute of iframe to show
+
             $("#btn1").click(function() {
                 $("#vid1").attr("src", "https://www.bilibili.tv/en/video/2005321785");
             });
+            $("#btn1").click(function() {
+                $(".hv1").attr("src", "");
+            });
+
         });
 
         $(document).ready(function() {
@@ -113,6 +119,9 @@
             });
             $("#btn2").click(function() {
                 $("#vid2").attr("src", "https://www.bilibili.tv/en/video/2003622187");
+            });
+            $("#btn2").click(function() {
+                $(".hv2").attr("src", "");
             });
         });
 
@@ -128,6 +137,9 @@
             $("#btn3").click(function() {
                 $("#vid3").attr("src", "https://www.bilibili.tv/en/video/2001589835");
             });
+            $("#btn3").click(function() {
+                $(".hv3").attr("src", "");
+            });
         });
         $(document).ready(function() {
             $("#btn4").click(function() {
@@ -138,6 +150,9 @@
             });
             $("#btn4").click(function() {
                 $("#vid4").attr("src", "https://www.bilibili.tv/en/video/2009478502");
+            });
+            $("#btn4").click(function() {
+                $(".hv4").attr("src", "");
             });
         });
         $(document).ready(function() {
@@ -150,6 +165,9 @@
             $("#btn5").click(function() {
                 $("#vid5").attr("src", "https://www.bilibili.tv/en/video/2008474923");
             });
+            $("#btn5").click(function() {
+                $(".hv5").attr("src", "");
+            });
         });
         $(document).ready(function() {
             $("#btn6").click(function() {
@@ -160,6 +178,9 @@
             });
             $("#btn6").click(function() {
                 $("#vid6").attr("src", "https://www.bilibili.tv/en/video/2002350490");
+            });
+            $("#btn6").click(function() {
+                $(".hv6").attr("src", "");
             });
         });
         $(document).ready(function() {
@@ -172,6 +193,9 @@
             $("#btn7").click(function() {
                 $("#vid7").attr("src", "https://www.bilibili.tv/en/video/2001569975");
             });
+            $("#btn7").click(function() {
+                $(".hv7").attr("src", "");
+            });
         });
         $(document).ready(function() {
             $("#btn8").click(function() {
@@ -182,6 +206,9 @@
             });
             $("#btn8").click(function() {
                 $("#vid8").attr("src", "https://www.youtube.com/embed/oPLfPuHrgzU");
+            });
+            $("#btn8").click(function() {
+                $(".hv8").attr("src", "");
             });
         });
         $(document).ready(function() {
